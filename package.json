@@ -2,13 +2,16 @@
   "name": "my-npm-package",
   "version": "1.0.0",
   "description": "Moja pierwsza paczka npm.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "console.log(\"Test\")"
+    "start": "parcel src/index.html --open"
   },
   "keywords": [
     "npm"
   ],
   "author": "Osik",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.1"
+  }
 }
