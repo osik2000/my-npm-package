@@ -1,0 +1,14 @@
+{
+  "name": "my-npm-package",
+  "version": "1.0.0",
+  "description": "Moja pierwsza paczka npm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"Test\")"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Osik",
+  "license": "ISC"
+}
