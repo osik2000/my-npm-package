@@ -72,6 +72,7 @@ function upgrade(i){
                 pay(u1Cost);
                 u1Level++;
                 u1Cost = u1Cost + (u1Cost * 30.0/100.0).toFixed(0);
+                kps += 0.1.toFixed(2);
                 upgrade1Cost.innerText = '(koszt: ' + u1Cost + ')';
                 upgrade1Level.innerText = '[Level ' + u1Level + ']';
             }
