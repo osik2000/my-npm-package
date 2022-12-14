@@ -3,16 +3,19 @@
     box-sizing: border-box;
     font-family: 'Bitter', serif;
     background-color: #4e4e4e;
+    margin: 0;
 }
 
 h1{
+    margin-top: 20px;
+    margin-bottom: 25px;
     width: 100%;
    text-align: center;
     font-size: xxx-large;
     padding-bottom: 40px;
     padding-top: 40px;
-    border-radius: 15%;
-    background-color: brown;
+    border-radius: 100% 15%;
+    background-color: #92410b;
 }
 
 #content{
@@ -38,18 +41,23 @@ h1{
 }
 
 .upgrade{
+    user-select: none;
     text-align: center;
     vertical-align: center;
-    line-height: 46px;
-    display: block;
-    width: 75%;
-    height: 50px;
+    line-height: 96px;
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+    min-height: 50px;
+    max-height: 104px;
     margin-bottom: 20px;
     margin-top: 20px;
     border: sandybrown;
     border-style: dashed;
     border-width: 2px;
-
+    user-drag: none;
+    -webkit-user-drag: none;
 }
 
 .info{
@@ -59,10 +67,38 @@ h1{
     margin: 2px;
 }
 
-#clickableKebab{
-    width: 250px;
-    height: 250px;
-    margin: 20px;
+.upgradePhoto{
+    height: 100px;
+    width: 100px;
+    padding-right: 5px;
+    border: sandybrown;
+    border-style: dashed;
+    border-width: 0 2px 0 0;
     user-drag: none;
     -webkit-user-drag: none;
 }
+
+
+
+.infoSection{
+    width: 85%;
+    padding: 0;
+    margin: 0;
+}
+
+.photoSection{
+    width: 15%;
+    aspect-ratio: 1;
+
+}
+
+#clickableKebab{
+    cursor:pointer;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
