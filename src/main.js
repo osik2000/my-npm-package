@@ -1,9 +1,8 @@
-console.log("Hello World!")
 
-let kebabs = 500000;
+
+let kebabs = 100000;
 let kps = 0;
 let kpc = 1;
-
 let u1Cost = 10;
 let u2Cost = 100;
 let u3Cost = 1000;
@@ -19,10 +18,6 @@ let u2Base = 1;
 let u3Base = 5;
 let u4Base = 10;
 let u5Base = 100;
-
-
-
-
 
 const kebabsLabel = document.querySelector('#kebabs');
 const kpsLabel = document.querySelector('#kps');
@@ -44,12 +39,9 @@ const upgrade5Cost = document.querySelector('#upgrade5 .upgradeCost');
 const upgrade5Level = document.querySelector('#upgrade5 .upgradeLevel');
 const clickableKebab = document.querySelector('#clickableKebab');
 
-
-
-clickableKebab.addEventListener('click', function (e){
+clickableKebab.addEventListener('click', function (){
     click();
 });
-
 
 function update(){
     kebabsLabel.innerText = ((kebabs*100)%100 !== 0)? 'Twoje kebaby: ' + kebabs.toFixed(2) : 'Twoje kebaby: ' + kebabs;
@@ -95,7 +87,7 @@ function upgrade(i){
             if(kebabs >= u3Cost){
                 pay(u3Cost);
                 u3Level++;
-                u1Cost = (u3Cost * 1.3).toFixed(0);
+                u3Cost = (u3Cost * 1.3).toFixed(0);
                 upgrade3Cost.innerText = '(koszt: ' + u3Cost + ')';
                 upgrade3Level.innerText = '[Level ' + u3Level + ' - ' + (u3Level * u3Base).toFixed(0) + 'kps]';
             }
@@ -145,7 +137,7 @@ function recalculateKPS(){
 }
 
 function recalculateKPC(){
-    if(u1Level * u1Base !== 0 && kps !== 0)
+    if(kps !== 0)
         kpc = 1 + +(u1Level * u1Base) + +(0.1 * kps).toFixed(2);
     else
         kpc = 1;
@@ -159,9 +151,13 @@ function checkPrices(){
     if(kebabs >= u1Cost){
         upgrade1Div.style.background = 'red';
         upgrade1Div.style.cursor = 'pointer';
+        upgrade1Level.style.cursor = 'pointer';
+        upgrade1Cost.style.cursor = 'pointer';
     } else {
         upgrade1Div.style.background = 'black';
         upgrade1Div.style.cursor = 'unset';
+        upgrade1Level.style.cursor = 'unset';
+        upgrade1Cost.style.cursor = 'unset';
     }
     if(kebabs >= u2Cost){
         upgrade2Div.style.background = 'red';
