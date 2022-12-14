@@ -1,6 +1,6 @@
 
 
-let kebabs = 100000;
+let kebabs = 0;
 let kps = 0;
 let kpc = 1;
 let u1Cost = 10;
@@ -162,30 +162,46 @@ function checkPrices(){
     if(kebabs >= u2Cost){
         upgrade2Div.style.background = 'red';
         upgrade2Div.style.cursor = 'pointer';
+        upgrade2Level.style.cursor = 'pointer';
+        upgrade2Cost.style.cursor = 'pointer';
     } else {
         upgrade2Div.style.background = 'black';
         upgrade2Div.style.cursor = 'unset';
+        upgrade2Level.style.cursor = 'unset';
+        upgrade2Cost.style.cursor = 'unset';
     }
     if(kebabs >= u3Cost){
         upgrade3Div.style.background = 'red';
         upgrade3Div.style.cursor = 'pointer';
+        upgrade3Level.style.cursor = 'pointer';
+        upgrade3Cost.style.cursor = 'pointer';
     } else {
         upgrade3Div.style.background = 'black';
         upgrade3Div.style.cursor = 'unset';
+        upgrade3Level.style.cursor = 'unset';
+        upgrade3Cost.style.cursor = 'unset';
     }
     if(kebabs >= u4Cost){
         upgrade4Div.style.background = 'red';
         upgrade4Div.style.cursor = 'pointer';
+        upgrade4Level.style.cursor = 'pointer';
+        upgrade4Cost.style.cursor = 'pointer';
     } else {
         upgrade4Div.style.background = 'black';
         upgrade4Div.style.cursor = 'unset';
+        upgrade4Level.style.cursor = 'unset';
+        upgrade4Cost.style.cursor = 'unset';
     }
     if(kebabs >= u5Cost){
         upgrade5Div.style.background = 'red';
         upgrade5Div.style.cursor = 'pointer';
+        upgrade5Level.style.cursor = 'pointer';
+        upgrade5Cost.style.cursor = 'pointer';
     } else {
         upgrade5Div.style.background = 'black';
         upgrade5Div.style.cursor = 'unset';
+        upgrade5Level.style.cursor = 'unset';
+        upgrade5Cost.style.cursor = 'unset';
     }
 
 }
